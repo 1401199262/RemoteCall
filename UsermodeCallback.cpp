@@ -7,9 +7,9 @@
 
 
 void UsermodeCallback::Init() {
-	KiCallUserMode = (KiCallUserModefn)0xfffff801735c4ac0;
-	MmCreateKernelStack = (MmCreateKernelStackfn)0xfffff8017346c210;
-	MmDeleteKernelStack = (MmDeleteKernelStackfn)0xfffff8017346d1e0;
+	//KiCallUserMode = (KiCallUserModefn)0xfffff801735c4ac0;
+	//MmCreateKernelStack = (MmCreateKernelStackfn)0xfffff8017346c210;
+	//MmDeleteKernelStack = (MmDeleteKernelStackfn)0xfffff8017346d1e0;
 
 
 	ContextUser = (CONTEXT*)UAlloc(sizeof(CONTEXT), PAGE_READWRITE, true);
