@@ -773,8 +773,8 @@ NTSTATUS SetCtxCall::Call()
 	CallInfo->PreCallKernelRoutine = [](PSET_CONTEXT_CALL_INFORMATION CallInf) {
 		PWCH UserStrMsg = (PWCH)UAlloc(0x1000);
 		PWCH UserStrTitle = (PWCH)UAlloc(0x1000);
-		wcscpy(UserStrMsg, E(L"Ô¶³ÌcallÐÅÏ¢"));
-		wcscpy(UserStrTitle, E(L"À´×ÔÔ¶³Ìcall")); 
+		wcscpy(UserStrMsg, E(L"Hi, I'm Pipi"));
+		wcscpy(UserStrTitle, E(L"来自远程Call")); 
 	
 		CallInf->Param[1].AsU64 = (u64)UserStrMsg;
 		CallInf->Param[2].AsU64 = (u64)UserStrTitle;		
